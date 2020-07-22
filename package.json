@@ -1,0 +1,35 @@
+{
+  "name": "date-select",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -w",
+    "wds-cli": "webpack-dev-server --inline --hot --module-bind 'css=style-loader!css-loader' --module-bind 'jsx=react-hot-loader!babel-loader' --config webpack.dev-cli.config.js",
+    "wds": "webpack-dev-server --config webpack.dev.config.js",
+    "start": "http-server -p 8000 -c-0 & webpack -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "6.13.2",
+    "babel-loader": "6.4.1",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "0.23.1",
+    "react": "15.5.4",
+    "react-dom": "15.5.4",
+    "react-hot-loader": "1.3.1",
+    "style-loader": "0.13.1",
+    "webpack": "2.4.1",
+    "webpack-dev-server": "2.4.2"
+  },
+  "dependencies": {
+    "date-fns": "^2.0.1",
+    "prop-types": "^15.7.2"
+  },
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  }
+}
